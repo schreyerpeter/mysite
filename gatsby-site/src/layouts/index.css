@@ -641,13 +641,13 @@ pre tt:after {
   position: absolute;
 }
 #node_logo {
-  transform-style: preserve-3d;
-  animation-name: orbit;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  height: 80px;
-  width: 80px;
+  -webkit-animation: vertical infinite 10s ease-in-out;
+  -moz-animation: vertical infinite 10s ease-in-out;
+  -o-animation: vertical infinite 10s ease-in-out;
+  animation: vertical infinite 10s ease-in-out;
+  animation-direction: reverse;
   position: absolute;
+  top: -60px;
 }
 @keyframes spin-right {
   0%  { transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1); }
@@ -663,9 +663,14 @@ pre tt:after {
   }
 }
 
-@keyframes orbit {
-  0% {
-    transform: rotateZ(0deg); }
+@keyframes vertical {
+  from {
+    z-index: 0
+  }
+  to {
+    z-index: 4
+  }
   100% {
-    transform: rotateZ(-360deg); } 
+    transform: rotateX(360deg)
+  }
 }

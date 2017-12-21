@@ -29,16 +29,16 @@ const Header = () => (
         justifyContent: 'center'
       }}
     >
-      <h1 style={{fontFamily:'georgia', textAlign:'center'}}>
+      <h1 style={{fontFamily:'georgia', textAlign:'center', zIndex:'2'}}>
           Pete Loves Code
       </h1>
-      <div id='react_logo' style={{height: '0px', width: '110px'}}>
+      <div id='react_logo' style={{height: '300px', width: '110px'}}>
       <img src={ReactLogo} alt='Redux logo' />
       </div>
       <div id='redux_logo' style={{height: '460px', width: '80px'}}>
         <img src={ReduxLogo} alt='React logo' />
       </div>
-      <div id='node_logo' style={{height: '460px', width: '80px'}}>
+      <div id='node_logo' style={{height: '320px', width: '80px'}}>
         <img src={NodeLogo} alt='Node logo' />
       </div>
     </div>

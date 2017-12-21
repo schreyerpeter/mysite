@@ -4,39 +4,42 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import ReactLogo from '../react_logo.svg'
 import ReduxLogo from '../redux_logo.svg'
+import NodeLogo from '../node_logo.svg'
 
 import './index.css'
 
 const Header = () => (
   <div
     style={{
-      background: 'navy',
-      marginBottom: '1.45rem',
-      height: '560px'
+      background: 'linear-gradient(to right, #1F989A, #97D2E3)',
+      height: '560px',
+      display: 'flex',
+      alignItems: 'center'
     }}
   >
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
         padding: '1.45rem 1.0875rem',
         position: 'relative',
-        height: '300px',
-        width: '300px',
-        left: '50px',
-        color: 'white'
+        width: '200px',
+        color: 'white',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
       }}
     >
-      <div style={{ position: 'absolute', top: '200px', textAlign: 'center'}}>
-      <h1 style={{fontFamily:'trebuchet'}}>
-          Hello World
+      <h1 style={{fontFamily:'georgia', textAlign:'center'}}>
+          Pete Loves Code
       </h1>
-      </div>
-      <div id='react_logo' style={{position:'absolute', height: '0px', width: '100px'}}>
+      <div id='react_logo' style={{height: '0px', width: '110px'}}>
       <img src={ReactLogo} alt='Redux logo' />
       </div>
-      <div id='redux_logo' style={{position:'absolute', height: '500px', width: '80px'}}>
+      <div id='redux_logo' style={{height: '460px', width: '80px'}}>
         <img src={ReduxLogo} alt='React logo' />
+      </div>
+      <div id='node_logo' style={{height: '460px', width: '80px'}}>
+        <img src={NodeLogo} alt='Node logo' />
       </div>
     </div>
   </div>
@@ -54,6 +57,8 @@ const TemplateWrapper = ({ children }) => (
         maxWidth: 960,
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
+        display: 'flex',
+        justifyContent: 'center'
       }}
     >
       {children()}

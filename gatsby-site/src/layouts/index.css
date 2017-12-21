@@ -628,8 +628,7 @@ pre tt:after {
     -o-animation: spin-right infinite 10s linear;
     animation: spin-right infinite 10s linear;
     position: absolute;
-    right: 100px;
-    top: 200px;
+    top: 60px;
   }
 #redux_logo {
   -webkit-animation: spin-left infinite 10s linear;
@@ -640,7 +639,15 @@ pre tt:after {
   height: 80px;
   width: 80px;
   position: absolute;
-  right: 100px;
+}
+#node_logo {
+  transform-style: preserve-3d;
+  animation-name: orbit;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 80px;
+  width: 80px;
+  position: absolute;
 }
 @keyframes spin-right {
   0%  { transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1); }
@@ -654,4 +661,11 @@ pre tt:after {
   100% {
     transform: rotate(360deg)
   }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(-360deg); } 
 }

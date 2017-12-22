@@ -622,13 +622,18 @@ pre tt:after {
     font-size: 100%;
   }
 }
+#title {
+  font-family:georgia;
+  text-align:center;
+  z-index:2;
+}
 #react_logo {
     -webkit-animation: spin-right infinite 10s linear;
     -moz-animation: spin-right infinite 10s linear;
     -o-animation: spin-right infinite 10s linear;
     animation: spin-right infinite 10s linear;
     position: absolute;
-    top: 60px;
+    top: 80px;
   }
 #redux_logo {
   -webkit-animation: spin-left infinite 10s linear;
@@ -636,8 +641,6 @@ pre tt:after {
   -o-animation: spin-left infinite 10s linear;
   animation: spin-left infinite 10s linear;
   animation-direction: reverse;
-  height: 80px;
-  width: 80px;
   position: absolute;
 }
 #node_logo {
@@ -649,6 +652,7 @@ pre tt:after {
   position: absolute;
   top: -60px;
 }
+
 @keyframes spin-right {
   0%  { transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1); }
   25%  { transform: rotate(90deg) translateX(5px) translateY(120px) rotate(-90deg) scale(.75); }

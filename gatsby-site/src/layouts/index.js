@@ -12,7 +12,7 @@ const Header = () => (
   <div
     style={{
       background: 'linear-gradient(to right, #1F989A, #97D2E3)',
-      height: '560px',
+      height: '460px',
       display: 'flex',
       alignItems: 'center'
     }}
@@ -29,7 +29,7 @@ const Header = () => (
         justifyContent: 'center'
       }}
     >
-      <h1 style={{fontFamily:'georgia', textAlign:'center', zIndex:'2'}}>
+      <h1 id='title'>
           Pete Loves Code
       </h1>
       <div id='react_logo' style={{height: '300px', width: '110px'}}>
@@ -38,7 +38,7 @@ const Header = () => (
       <div id='redux_logo' style={{height: '460px', width: '80px'}}>
         <img src={ReduxLogo} alt='React logo' />
       </div>
-      <div id='node_logo' style={{height: '320px', width: '80px'}}>
+      <div id='node_logo' style={{height: '300px', width: '60px'}}>
         <img src={NodeLogo} alt='Node logo' />
       </div>
     </div>

@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import ReactLogo from '../react_logo.svg'
-import ReduxLogo from '../redux_logo.svg'
-import NodeLogo from '../node_logo.svg'
+import ReactLogo from '../svg/react_logo.svg'
+import ReduxLogo from '../svg/redux_logo.svg'
+import NodeLogo from '../svg/node_logo.svg'
 
 import './index.css'
 
@@ -48,7 +48,7 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Pete Codes"
     />
     <Header />
     <div

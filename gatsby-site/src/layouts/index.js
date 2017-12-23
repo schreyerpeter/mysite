@@ -48,7 +48,7 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Pete Codes"
+      title="Peter Schreyer"
     />
     <Header />
     <div
